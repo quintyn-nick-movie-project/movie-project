@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/movie_project.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+    <canvas id="c"></canvas>
+    <div class="container grow">
+
+        <div id="intro" class="column grow justify-center align-center">
+            <div id="load-logo">
+                <p>★ ★ ★ ★ ★</p>
+                <p>FILMGRADE</p>
+                <p>★ ★ ★ ★ ★</p>
+            </div>
+            <div id="load-text" class="row justify-center">
+                <div class="r">R</div>
+                <div class="e">e</div>
+                <div class="n">n</div>
+                <div class="d">d</div>
+                <div class="e2">e</div>
+                <div class="r2">r</div>
+                <div class="i">i</div>
+                <div class="n2">n</div>
+                <div class="g">g</div>
+                <div class="o">O</div>
+                <div class="p">p</div>
+                <div class="i2">i</div>
+                <div class="n3">n</div>
+                <div class="i2">i</div>
+                <div class="o2">o</div>
+                <div class="n4">n</div>
+                <div class="s">s</div>
+            </div>
+            <div class="loader row justify-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="content" class="row hide justify-center">
+            <div class="column shrink">
+                <header class="stamp-logo">
+                    <div class="row shrink justify-center">
+                        <p>★ ★ ★ ★ ★</p>
+                        <p>FILMGRADE</p>
+                        <p>★ ★ ★ ★ ★</p>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <div id="favGrid" class="row grid-template align-center wrap justify-center"></div>
+                    <div id="userAddGrid" class="column grid-template align-center justify-space-between">
+                        <h2 id="AddGrid-title">New Film Grade</h2>
+                        <label for="title"> Title
+                            <input id="title" type="text">
+                        </label>
+                        <label for="genre">  Genre
+                        <select id="genre">
+                          <option value="Comedy"> Comedy </option>
+                          <option value="Fantasy"> Fantasy </option>
+                          <option value="Crime"> Crime </option>
+                          <option value="Drama"> Drama </option>
+                          <option value="Music"> Music </option>
+                          <option value="Adventure"> Adventure </option>
+                          <option value="History"> History </option>
+                          <option value="Thriller"> Thriller </option>
+                          <option value="Animation"> Animation </option>
+                          <option value="Family"> Family </option>
+                          <option value="Mystery"> Mystery </option>
+                          <option value="Biography"> Biography </option>
+                          <option value="Action"> Action </option>
+                          <option value="Romance"> Romance </option>
+                          <option value="Sci-Fi"> Sci-Fi </option>
+                          <option value="War"> War </option>
+                          <option value="Western"> Western </option>
+                          <option value="Horror"> Horror </option>
+                          <option value="Musical"> Musical </option>
+                        </select>
+                        </label>
+                      <!--https://codepen.io/hesguru/pen/BaybqXv-->
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1">1 star</label>
+                        </div>
+                        <button id="grade-button">GRADE</button>
+                    </div>
+                </div>
+
+                <div id="moviesGrid" class="row grid-template align-center justify-content-start"></div>
+
+
+          </div>
+
+      </div>
+    </div>
+</div>
+
+
+<script type="module" src="movie_project.js"></script>
+
+</body>
+</html>

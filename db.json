@@ -1,0 +1,1200 @@
+{
+  "genres": [
+    "Comedy",
+    "Fantasy",
+    "Crime",
+    "Drama",
+    "Music",
+    "Adventure",
+    "History",
+    "Thriller",
+    "Animation",
+    "Family",
+    "Mystery",
+    "Biography",
+    "Action",
+    "Romance",
+    "Sci-Fi",
+    "War",
+    "Western",
+    "Horror",
+    "Musical",
+    "Sport"
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "title": "Bladerunner",
+      "genres": "Sci-Fi",
+      "rating": 5,
+      "plot": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
+      "poster": "images/bladerunner.webp"
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "genres": "Sci-Fi",
+      "rating": 5,
+      "plot": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole.",
+      "poster": "images/interstellar.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Labyrinth",
+      "genres": "Fantasy",
+      "rating": 5,
+      "plot": "Sixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
+      "poster": "images/labyrinth.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Mad Max: Fury Road",
+      "genres": "Action",
+      "rating": 5,
+      "plot": "Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive.",
+      "poster": "images/mad_max.jpg"
+    },
+    {
+      "id": 5,
+      "title": "As Above So Below",
+      "genres": "Horror",
+      "rating": 5,
+      "plot": "Archaeologist Scarlett Marlowe (Perdita Weeks) has devoted her whole life to finding one of history's greatest treasures: Flamel's Philosopher's Stone. According to legend, the artifact can grant eternal life and turn any metal into gold. When she learns that the stone is hidden underground in the Catacombs of Paris, she assembles a crew to guide and document her historic mission.",
+      "poster": "images/as_above_so_below.jpeg"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Beetlejuice",
+      "year": "1988",
+      "runtime": "92",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "rating": 1,
+      "director": "Tim Burton",
+      "actors": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
+      "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "runtime": "142",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 2,
+      "director": "Frank Darabont",
+      "actors": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hBcY0fE9pfXzvVaY4GKarweriG2.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Crocodile Dundee",
+      "year": "1986",
+      "runtime": "97",
+      "genres": [
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 4,
+      "director": "Peter Faiman",
+      "actors": "Paul Hogan, Linda Kozlowski, John Meillon, David Gulpilil",
+      "plot": "An American reporter goes to the Australian outback to meet an eccentric crocodile poacher and invites him to New York City.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pduPduL1ub5kok3lPYT15ryC9L6.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Valkyrie",
+      "year": "2008",
+      "runtime": "121",
+      "genres": [
+        "Drama",
+        "History",
+        "Thriller"
+      ],
+      "rating": 2,
+      "director": "Bryan Singer",
+      "actors": "Tom Cruise, Kenneth Branagh, Bill Nighy, Tom Wilkinson",
+      "plot": "A dramatization of the 20 July assassination and political coup plot by desperate renegade German Army officers against Hitler during World War II.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Ratatouille",
+      "year": "2007",
+      "runtime": "111",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Family"
+      ],
+      "rating": 1,
+      "director": "Brad Bird, Jan Pinkava",
+      "actors": "Patton Oswalt, Ian Holm, Lou Romano, Brian Dennehy",
+      "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Apocalypto",
+      "year": "2006",
+      "runtime": "139",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 5,
+      "director": "Mel Gibson",
+      "actors": "Rudy Youngblood, Dalia Hernández, Jonathan Brewer, Morris Birdyellowhead",
+      "plot": "As the Mayan kingdom faces its decline, the rulers insist the key to prosperity is to build more temples and offer human sacrifices. Jaguar Paw, a young man captured for sacrifice, flees to avoid his fate.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cBFQsU1LDBEOl0Ik0cygeB6wCLE.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Taxi Driver",
+      "year": "1976",
+      "runtime": "113",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 4,
+      "director": "Martin Scorsese",
+      "actors": "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito",
+      "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
+      "poster": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ekstpH614fwDX8DUln1a2Opz0N8.jpg"
+    },
+    {
+      "id": 13,
+      "title": "No Country for Old Men",
+      "year": "2007",
+      "runtime": "122",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 5,
+      "director": "Ethan Coen, Joel Coen",
+      "actors": "Tommy Lee Jones, Javier Bardem, Josh Brolin, Woody Harrelson",
+      "plot": "Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Corpse Bride",
+      "year": "2005",
+      "runtime": "77",
+      "genres": [
+        "Animation",
+        "Drama",
+        "Family"
+      ],
+      "rating": 4,
+      "director": "Tim Burton, Mike Johnson",
+      "actors": "Johnny Depp, Helena Bonham Carter, Emily Watson, Tracey Ullman",
+      "plot": "When a shy groom practices his wedding vows in the inadvertent presence of a deceased young woman, she rises from the grave assuming he has married her.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/isb2Qow76GpqYmsSyfdMfsYAjts.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Scarface",
+      "year": "1983",
+      "runtime": "170",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 1,
+      "director": "Brian De Palma",
+      "actors": "Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio",
+      "plot": "In Miami in 1980, a determined Cuban immigrant takes over a drug cartel and succumbs to greed.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Black Swan",
+      "year": "2010",
+      "runtime": "108",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 3,
+      "director": "Darren Aronofsky",
+      "actors": "Natalie Portman, Mila Kunis, Vincent Cassel, Barbara Hershey",
+      "plot": "A committed dancer wins the lead role in a production of Tchaikovsky's \"Swan Lake\" only to find herself struggling to maintain her sanity.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8XYghKF0xkxp5A7QtK2F5vffdpZ.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Inception",
+      "year": "2010",
+      "runtime": "148",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "rating": 2,
+      "director": "Christopher Nolan",
+      "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
+      "plot": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Django Unchained",
+      "year": "2012",
+      "runtime": "165",
+      "genres": [
+        "Drama",
+        "Western"
+      ],
+      "rating": 5,
+      "director": "Quentin Tarantino",
+      "actors": "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington",
+      "plot": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg"
+    },
+    {
+      "id": 26,
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "runtime": "118",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 2,
+      "director": "Jonathan Demme",
+      "actors": "Jodie Foster, Lawrence A. Bonney, Kasi Lemmons, Lawrence T. Wrentz",
+      "plot": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg"
+    },
+    {
+      "id": 27,
+      "title": "American Beauty",
+      "year": "1999",
+      "runtime": "122",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 1,
+      "director": "Sam Mendes",
+      "actors": "Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley",
+      "plot": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wby9315QzVKdW9BonAefg8jGTTb.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Snatch",
+      "year": "2000",
+      "runtime": "102",
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "rating": 1,
+      "director": "Guy Ritchie",
+      "actors": "Benicio Del Toro, Dennis Farina, Vinnie Jones, Brad Pitt",
+      "plot": "Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers, and supposedly Jewish jewelers fight to track down a priceless stolen diamond.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/56mOJth6DJ6JhgoE2jtpilVqJO.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "runtime": "154",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 4,
+      "director": "Quentin Tarantino",
+      "actors": "Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta",
+      "plot": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Lock, Stock and Two Smoking Barrels",
+      "year": "1998",
+      "runtime": "107",
+      "genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "rating": 1,
+      "director": "Guy Ritchie",
+      "actors": "Jason Flemyng, Dexter Fletcher, Nick Moran, Jason Statham",
+      "plot": "A botched card game in London triggers four friends, thugs, weed-growers, hard gangsters, loan sharks and debt collectors to collide with each other in a series of unexpected events, all for the sake of weed, cash and two antique shotguns.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8kSerJrhrJWKLk1LViesGcnrUPE.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Pan's Labyrinth",
+      "year": "2006",
+      "runtime": "118",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "War"
+      ],
+      "rating": 2,
+      "director": "Guillermo del Toro",
+      "actors": "Ivana Baquero, Sergi López, Maribel Verdú, Doug Jones",
+      "plot": "In the falangist Spain of 1944, the bookish young stepdaughter of a sadistic army officer escapes into an eerie but captivating fantasy world.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/s8C4whhKtDaJvMDcyiMvx3BIF5F.jpg"
+    },
+    {
+      "id": 35,
+      "title": "Shutter Island",
+      "year": "2010",
+      "runtime": "138",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "rating": 4,
+      "director": "Martin Scorsese",
+      "actors": "Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley, Max von Sydow",
+      "plot": "In 1954, a U.S. marshal investigates the disappearance of a murderess who escaped from a hospital for the criminally insane.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4GDy0PHYX3VRXUtwK5ysFbg3kEx.jpg"
+    },
+    {
+      "id": 36,
+      "title": "Reservoir Dogs",
+      "year": "1992",
+      "runtime": "99",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 2,
+      "director": "Quentin Tarantino",
+      "actors": "Harvey Keitel, Tim Roth, Michael Madsen, Chris Penn",
+      "plot": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg"
+    },
+    {
+      "id": 37,
+      "title": "The Shining",
+      "year": "1980",
+      "runtime": "146",
+      "genres": [
+        "Drama",
+        "Horror"
+      ],
+      "rating": 4,
+      "director": "Stanley Kubrick",
+      "actors": "Jack Nicholson, Shelley Duvall, Danny Lloyd, Scatman Crothers",
+      "plot": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence, while his psychic son sees horrific forebodings from the past and of the future.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nRj5511mZdTl4saWEPoj9QroTIu.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Les Misérables",
+      "year": "2012",
+      "runtime": "158",
+      "genres": [
+        "Drama",
+        "Musical",
+        "Romance"
+      ],
+      "rating": 4,
+      "director": "Tom Hooper",
+      "actors": "Hugh Jackman, Russell Crowe, Anne Hathaway, Amanda Seyfried",
+      "plot": "In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after breaking parole, agrees to care for a factory worker's daughter. The decision changes their lives forever.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xYXxqn9EV6yplgpLgYzxXlgXuq.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Moneyball",
+      "year": "2011",
+      "runtime": "133",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Sport"
+      ],
+      "rating": 1,
+      "director": "Bennett Miller",
+      "actors": "Brad Pitt, Jonah Hill, Philip Seymour Hoffman, Robin Wright",
+      "plot": "Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4yIQq1e6iOcaZ5rLDG3lZBP3j7a.jpg"
+    },
+    {
+      "id": 42,
+      "title": "The Hangover",
+      "year": "2009",
+      "runtime": "100",
+      "genres": [
+        "Comedy"
+      ],
+      "rating": 4,
+      "director": "Todd Phillips",
+      "actors": "Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha",
+      "plot": "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uluhlXubGu1VxU63X9VHCLWDAYP.jpg"
+    },
+    {
+      "id": 44,
+      "title": "Gran Torino",
+      "year": "2008",
+      "runtime": "116",
+      "genres": [
+        "Drama"
+      ],
+      "rating": 4,
+      "director": "Clint Eastwood",
+      "actors": "Clint Eastwood, Christopher Carley, Bee Vang, Ahney Her",
+      "plot": "Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, a Hmong teenager who tried to steal Kowalski's prized possession: a 1972 Gran Torino.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zUybYvxWdAJy5hhYovsXtHSWI1l.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Requiem for a Dream",
+      "year": "2000",
+      "runtime": "102",
+      "genres": [
+        "Drama"
+      ],
+      "rating": 3,
+      "director": "Darren Aronofsky",
+      "actors": "Ellen Burstyn, Jared Leto, Jennifer Connelly, Marlon Wayans",
+      "plot": "The drug-induced utopias of four Coney Island people are shattered when their addictions run deep.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nOd6vjEmzCT0k4VYqsA2hwyi87C.jpg"
+    },
+    {
+      "id": 49,
+      "title": "The Truman Show",
+      "year": "1998",
+      "runtime": "103",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": 5,
+      "director": "Peter Weir",
+      "actors": "Jim Carrey, Laura Linney, Noah Emmerich, Natascha McElhone",
+      "plot": "An insurance salesman/adjuster discovers his entire life is actually a television show.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vuza0WqY239yBXOadKlGwJsZJFE.jpg"
+    },
+    {
+      "id": 51,
+      "title": "Forrest Gump",
+      "year": "1994",
+      "runtime": "142",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "rating": 5,
+      "director": "Robert Zemeckis",
+      "actors": "Tom Hanks, Rebecca Williams, Sally Field, Michael Conner Humphreys",
+      "plot": "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+    },
+    {
+      "id": 52,
+      "title": "The Hobbit: The Desolation of Smaug",
+      "year": "2013",
+      "runtime": "161",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "rating": 2,
+      "director": "Peter Jackson",
+      "actors": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
+      "plot": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg"
+    },
+    {
+      "id": 54,
+      "title": "Slumdog Millionaire",
+      "year": "2008",
+      "runtime": "120",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 3,
+      "director": "Danny Boyle, Loveleen Tandan",
+      "actors": "Dev Patel, Saurabh Shukla, Anil Kapoor, Rajendranath Zutshi",
+      "plot": "A Mumbai teen reflects on his upbringing in the slums when he is accused of cheating on the Indian Version of \"Who Wants to be a Millionaire?\"",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5leCCi7ZF0CawAfM5Qo2ECKPprc.jpg"
+    },
+    {
+      "id": 65,
+      "title": "The Social Network",
+      "year": "2010",
+      "runtime": "120",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "rating": 1,
+      "director": "David Fincher",
+      "actors": "Jesse Eisenberg, Rooney Mara, Bryan Barter, Dustin Fitzsimons",
+      "plot": "Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg"
+    },
+    {
+      "id": 68,
+      "title": "Casablanca",
+      "year": "1942",
+      "runtime": "102",
+      "genres": [
+        "Drama",
+        "Romance",
+        "War"
+      ],
+      "rating": 5,
+      "director": "Michael Curtiz",
+      "actors": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
+      "plot": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5K7cOHoay2mZusSLezBOY0Qxh8a.jpg"
+    },
+    {
+      "id": 69,
+      "title": "American Gangster",
+      "year": "2007",
+      "runtime": "157",
+      "genres": [
+        "Biography",
+        "Crime",
+        "Drama"
+      ],
+      "rating": 1,
+      "director": "Ridley Scott",
+      "actors": "Denzel Washington, Russell Crowe, Chiwetel Ejiofor, Josh Brolin",
+      "plot": "In 1970s America, a detective works to bring down the drug empire of Frank Lucas, a heroin kingpin from Manhattan, who is smuggling the drug into the country from the Far East.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sX9idXDqRUxE5ffww3n3RV5gL55.jpg"
+    },
+    {
+      "id": 73,
+      "title": "Pirates of the Caribbean: At World's End",
+      "year": "2007",
+      "runtime": "169",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "rating": 2,
+      "director": "Gore Verbinski",
+      "actors": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley",
+      "plot": "Captain Barbossa, Will Turner and Elizabeth Swann must sail off the edge of the map, navigate treachery and betrayal, find Jack Sparrow, and make their final alliances for one last decisive battle.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jGWpG4YhpQwVmjyHEGkxEkeRf0S.jpg"
+    },
+    {
+      "id": 77,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": "2003",
+      "runtime": "201",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 1,
+      "director": "Peter Jackson",
+      "actors": "Noel Appleby, Ali Astin, Sean Astin, David Aston",
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg"
+    },
+    {
+      "id": 80,
+      "title": "Casino Royale",
+      "year": "2006",
+      "runtime": "144",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Thriller"
+      ],
+      "rating": 5,
+      "director": "Martin Campbell",
+      "actors": "Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench",
+      "plot": "Armed with a licence to kill, Secret Agent James Bond sets out on his first mission as 007 and must defeat a weapons dealer in a high stakes game of poker at Casino Royale, but things are not what they seem.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 81,
+      "title": "WALL·E",
+      "year": "2008",
+      "runtime": "98",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "rating": 3,
+      "director": "Andrew Stanton",
+      "actors": "Ben Burtt, Elissa Knight, Jeff Garlin, Fred Willard",
+      "plot": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 82,
+      "title": "The Wolf of Wall Street",
+      "year": "2013",
+      "runtime": "180",
+      "genres": [
+        "Biography",
+        "Comedy",
+        "Crime"
+      ],
+      "rating": 5,
+      "director": "Martin Scorsese",
+      "actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
+      "plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 86,
+      "title": "The Grand Budapest Hotel",
+      "year": "2014",
+      "runtime": "99",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Crime"
+      ],
+      "rating": 5,
+      "director": "Wes Anderson",
+      "actors": "Ralph Fiennes, F. Murray Abraham, Mathieu Amalric, Adrien Brody",
+      "plot": "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 87,
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "year": "2005",
+      "runtime": "109",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Sci-Fi"
+      ],
+      "rating": 1,
+      "director": "Garth Jennings",
+      "actors": "Bill Bailey, Anna Chancellor, Warwick Davis, Yasiin Bey",
+      "plot": "Mere seconds before the Earth is to be demolished by an alien construction crew, journeyman Arthur Dent is swept off the planet by his friend Ford Prefect, a researcher penning a new edition of \"The Hitchhiker's Guide to the Galaxy.\"",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 90,
+      "title": "V for Vendetta",
+      "year": "2005",
+      "runtime": "132",
+      "genres": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 4,
+      "director": "James McTeigue",
+      "actors": "Natalie Portman, Hugo Weaving, Stephen Rea, Stephen Fry",
+      "plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V\", plots to overthrow it with the help of a young woman.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 92,
+      "title": "Silver Linings Playbook",
+      "year": "2012",
+      "runtime": "122",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "rating": 3,
+      "director": "David O. Russell",
+      "actors": "Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver",
+      "plot": "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 93,
+      "title": "Alice in Wonderland",
+      "year": "2010",
+      "runtime": "108",
+      "genres": [
+        "Adventure",
+        "Family",
+        "Fantasy"
+      ],
+      "rating": 4,
+      "director": "Tim Burton",
+      "actors": "Johnny Depp, Mia Wasikowska, Helena Bonham Carter, Anne Hathaway",
+      "plot": "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 98,
+      "title": "Cloud Atlas",
+      "year": "2012",
+      "runtime": "172",
+      "genres": [
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": 4,
+      "director": "Tom Tykwer, Lana Wachowski, Lilly Wachowski",
+      "actors": "Tom Hanks, Halle Berry, Jim Broadbent, Hugo Weaving",
+      "plot": "An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero, and an act of kindness ripples across centuries to inspire a revolution.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 100,
+      "title": "All Quiet on the Western Front",
+      "year": "1930",
+      "runtime": "136",
+      "genres": [
+        "Drama",
+        "War"
+      ],
+      "rating": 4,
+      "director": "Lewis Milestone",
+      "actors": "Louis Wolheim, Lew Ayres, John Wray, Arnold Lucy",
+      "plot": "A young soldier faces profound disillusionment in the soul-destroying horror of World War I.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 102,
+      "title": "Dallas Buyers Club",
+      "year": "2013",
+      "runtime": "117",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "rating": 1,
+      "director": "Jean-Marc Vallée",
+      "actors": "Matthew McConaughey, Jennifer Garner, Jared Leto, Denis O'Hare",
+      "plot": "In 1985 Dallas, electrician and hustler Ron Woodroof works around the system to help AIDS patients get the medication they need after he is diagnosed with the disease.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 105,
+      "title": "The Rum Diary",
+      "year": "2011",
+      "runtime": "120",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "rating": 4,
+      "director": "Bruce Robinson",
+      "actors": "Johnny Depp, Aaron Eckhart, Michael Rispoli, Amber Heard",
+      "plot": "American journalist Paul Kemp takes on a freelance job in Puerto Rico for a local newspaper during the 1960s and struggles to find a balance between island culture and the expatriates who live there.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 106,
+      "title": "The Last Samurai",
+      "year": "2003",
+      "runtime": "154",
+      "genres": [
+        "Action",
+        "Drama",
+        "History"
+      ],
+      "rating": 1,
+      "director": "Edward Zwick",
+      "actors": "Ken Watanabe, Tom Cruise, William Atherton, Chad Lindberg",
+      "plot": "An American military advisor embraces the Samurai culture he was hired to destroy after he is captured in battle.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 110,
+      "title": "Spirited Away",
+      "year": "2001",
+      "runtime": "125",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Family"
+      ],
+      "rating": 2,
+      "director": "Hayao Miyazaki",
+      "actors": "Rumi Hiiragi, Miyu Irino, Mari Natsuki, Takashi Naitô",
+      "plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 112,
+      "title": "Birdman or (The Unexpected Virtue of Ignorance)",
+      "year": "2014",
+      "runtime": "119",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "rating": 4,
+      "director": "Alejandro G. Iñárritu",
+      "actors": "Michael Keaton, Emma Stone, Kenny Chin, Jamahl Garrison-Lowe",
+      "plot": "Illustrated upon the progress of his latest Broadway play, a former popular actor's struggle to cope with his current life as a wasted actor is shown.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 113,
+      "title": "Boyhood",
+      "year": "2014",
+      "runtime": "165",
+      "genres": [
+        "Drama"
+      ],
+      "rating": 4,
+      "director": "Richard Linklater",
+      "actors": "Ellar Coltrane, Patricia Arquette, Elijah Smith, Lorelei Linklater",
+      "plot": "The life of Mason, from early childhood to his arrival at college.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 115,
+      "title": "The Imitation Game",
+      "year": "2014",
+      "runtime": "114",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 4,
+      "director": "Morten Tyldum",
+      "actors": "Benedict Cumberbatch, Keira Knightley, Matthew Goode, Rory Kinnear",
+      "plot": "During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 116,
+      "title": "Interstellar",
+      "year": "2014",
+      "runtime": "169",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": 1,
+      "director": "Christopher Nolan",
+      "actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 120,
+      "title": "Sin City",
+      "year": "2005",
+      "runtime": "124",
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "rating": 5,
+      "director": "Frank Miller, Robert Rodriguez, Quentin Tarantino",
+      "actors": "Jessica Alba, Devon Aoki, Alexis Bledel, Powers Boothe",
+      "plot": "A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 122,
+      "title": "Shrek",
+      "year": "2001",
+      "runtime": "90",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 5,
+      "director": "Andrew Adamson, Vicky Jenson",
+      "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow",
+      "plot": "After his swamp is filled with magical creatures, an ogre agrees to rescue a princess for a villainous lord in order to get his land back.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 123,
+      "title": "Mr. & Mrs. Smith",
+      "year": "2005",
+      "runtime": "120",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime"
+      ],
+      "rating": 1,
+      "director": "Doug Liman",
+      "actors": "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody",
+      "plot": "A bored married couple is surprised to learn that they are both assassins hired by competing agencies to kill each other.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 127,
+      "title": "Despicable Me",
+      "year": "2010",
+      "runtime": "95",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 1,
+      "director": "Pierre Coffin, Chris Renaud",
+      "actors": "Steve Carell, Jason Segel, Russell Brand, Julie Andrews",
+      "plot": "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 128,
+      "title": "Troy",
+      "year": "2004",
+      "runtime": "163",
+      "genres": [
+        "Adventure"
+      ],
+      "rating": 1,
+      "director": "Wolfgang Petersen",
+      "actors": "Julian Glover, Brian Cox, Nathan Jones, Adoni Maropis",
+      "plot": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 129,
+      "title": "The Hobbit: An Unexpected Journey",
+      "year": "2012",
+      "runtime": "169",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "rating": 2,
+      "director": "Peter Jackson",
+      "actors": "Ian McKellen, Martin Freeman, Richard Armitage, Ken Stott",
+      "plot": "A reluctant hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home - and the gold within it - from the dragon Smaug.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 130,
+      "title": "The Great Gatsby",
+      "year": "2013",
+      "runtime": "143",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 2,
+      "director": "Baz Luhrmann",
+      "actors": "Lisa Adam, Frank Aldridge, Amitabh Bachchan, Steve Bisley",
+      "plot": "A writer and wall street trader, Nick, finds himself drawn to the past and lifestyle of his millionaire neighbor, Jay Gatsby.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 131,
+      "title": "Ice Age",
+      "year": "2002",
+      "runtime": "81",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 2,
+      "director": "Chris Wedge, Carlos Saldanha",
+      "actors": "Ray Romano, John Leguizamo, Denis Leary, Goran Visnjic",
+      "plot": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 132,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": "2001",
+      "runtime": "178",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 2,
+      "director": "Peter Jackson",
+      "actors": "Alan Howard, Noel Appleby, Sean Astin, Sala Baker",
+      "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 133,
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": "2002",
+      "runtime": "179",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "rating": 2,
+      "director": "Peter Jackson",
+      "actors": "Bruce Allpress, Sean Astin, John Bach, Sala Baker",
+      "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 134,
+      "title": "Ex Machina",
+      "year": "2015",
+      "runtime": "108",
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi"
+      ],
+      "rating": 2,
+      "director": "Alex Garland",
+      "actors": "Domhnall Gleeson, Corey Johnson, Oscar Isaac, Alicia Vikander",
+      "plot": "A young programmer is selected to participate in a ground-breaking experiment in synthetic intelligence by evaluating the human qualities of a breath-taking humanoid A.I.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 135,
+      "title": "The Theory of Everything",
+      "year": "2014",
+      "runtime": "123",
+      "genres": [
+        "Biography",
+        "Drama",
+        "Romance"
+      ],
+      "rating": 2,
+      "director": "James Marsh",
+      "actors": "Eddie Redmayne, Felicity Jones, Tom Prior, Sophie Perry",
+      "plot": "A look at the relationship between the famous physicist Stephen Hawking and his wife.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 136,
+      "title": "Shogun",
+      "year": "1980",
+      "runtime": "60",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "History"
+      ],
+      "rating": 2,
+      "director": "N/A",
+      "actors": "Richard Chamberlain, Toshirô Mifune, Yôko Shimada, Furankî Sakai",
+      "plot": "A English navigator becomes both a player and pawn in the complex political games in feudal Japan.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 139,
+      "title": "Whiplash",
+      "year": "2014",
+      "runtime": "107",
+      "genres": [
+        "Drama",
+        "Music"
+      ],
+      "rating": 5,
+      "director": "Damien Chazelle",
+      "actors": "Miles Teller, J.K. Simmons, Paul Reiser, Melissa Benoist",
+      "plot": "A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 141,
+      "title": "Hotel Rwanda",
+      "year": "2004",
+      "runtime": "121",
+      "genres": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "rating": 5,
+      "director": "Terry George",
+      "actors": "Xolani Mali, Don Cheadle, Desmond Dube, Hakeem Kae-Kazim",
+      "plot": "Paul Rusesabagina was a hotel manager who housed over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 142,
+      "title": "The Martian",
+      "year": "2015",
+      "runtime": "144",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "rating": 5,
+      "director": "Ridley Scott",
+      "actors": "Matt Damon, Jessica Chastain, Kristen Wiig, Jeff Daniels",
+      "plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 143,
+      "title": "To Kill a Mockingbird",
+      "year": "1962",
+      "runtime": "129",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 5,
+      "director": "Robert Mulligan",
+      "actors": "Gregory Peck, John Megna, Frank Overton, Rosemary Murphy",
+      "plot": "Atticus Finch, a lawyer in the Depression-era South, defends a black man against an undeserved rape charge, and his kids against prejudice.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 144,
+      "title": "The Hateful Eight",
+      "year": "2015",
+      "runtime": "187",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": 5,
+      "director": "Quentin Tarantino",
+      "actors": "Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, Walton Goggins",
+      "plot": "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of nefarious characters.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 145,
+      "title": "The Big Short",
+      "year": "2015",
+      "runtime": "130",
+      "genres": [
+        "Biography",
+        "Comedy",
+        "Drama"
+      ],
+      "rating": 5,
+      "director": "Adam McKay",
+      "actors": "Ryan Gosling, Rudy Eisenzopf, Casey Groves, Charlie Talbert",
+      "plot": "Four denizens in the world of high-finance predict the credit and housing bubble collapse of the mid-2000s, and decide to take on the big banks for their greed and lack of foresight.",
+      "poster": "https://via.placeholder.com/200x300"
+    }
+  ]
+}
