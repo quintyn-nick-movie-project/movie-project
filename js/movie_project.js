@@ -97,6 +97,23 @@ bgRender();
 
     })
 
+// EDIT MOVIE
+    let edtButtons = document.querySelectorAll('.edt-submit-button');
+    edtButtons.forEach(n => {
+        n.addEventListener('click', async () => {
+            let movies = document.querySelectorAll('#moviesGrid')
+            movies.innerHTML = ''
+            let jsonMovies = await getMovies();
+            console.log(jsonMovies);
+            const moviesGrid = document.querySelector('#moviesGrid');
+            jsonMovies.forEach(function(jsonMovies){
+                renderMovieCard(jsonMovies, moviesGrid);
+            });
+        })
+
+    })
+
+
 })();
 
 

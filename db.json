@@ -28,7 +28,7 @@
       "genres": "Sci-Fi",
       "rating": 5,
       "plot": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
-      "poster": "images/bladerunner.webp"
+      "poster": "https://www.themoviedb.org/t/p/w1280/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
     },
     {
       "id": 2,
@@ -36,7 +36,7 @@
       "genres": "Sci-Fi",
       "rating": 5,
       "plot": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole.",
-      "poster": "images/interstellar.jpg"
+      "poster": "https://www.themoviedb.org/t/p/w1280/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
     },
     {
       "id": 3,
@@ -44,7 +44,7 @@
       "genres": "Fantasy",
       "rating": 5,
       "plot": "Sixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
-      "poster": "images/labyrinth.jpg"
+      "poster": "https://www.themoviedb.org/t/p/w1280/q2GimbyqxCeLkRfSMajtaHdwWg9.jpg"
     },
     {
       "id": 4,
@@ -52,7 +52,7 @@
       "genres": "Action",
       "rating": 5,
       "plot": "Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive.",
-      "poster": "images/mad_max.jpg"
+      "poster": "https://www.themoviedb.org/t/p/w1280/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@
       "genres": "Horror",
       "rating": 5,
       "plot": "Archaeologist Scarlett Marlowe (Perdita Weeks) has devoted her whole life to finding one of history's greatest treasures: Flamel's Philosopher's Stone. According to legend, the artifact can grant eternal life and turn any metal into gold. When she learns that the stone is hidden underground in the Catacombs of Paris, she assembles a crew to guide and document her historic mission.",
-      "poster": "images/as_above_so_below.jpeg"
+      "poster": "https://www.themoviedb.org/t/p/w1280/oJZSajKLJkoTOzSZQN2ZwRnPwHZ.jpg"
     }
   ],
   "movies": [

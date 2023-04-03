@@ -413,22 +413,8 @@ export const renderMovieCard = (film, parent) => {
 
             if (ratingEDT === 5) {
                 let result =  await editMovie(movieData)
-                let jsonFav = await getFavorite();
-                console.log(jsonFav);
-                // Render the movies
-                const favGrid = document.querySelector('#favGrid');
-                jsonFav.forEach(function(jsonFav){
-                    renderMovieCard(jsonFav, favGrid);
-                });
             } else {
                 let result =  await editMovie(movieData)
-                let jsonMovies = await getMovies();
-                console.log(jsonMovies);
-                // Render the movies
-                const moviesGrid = document.querySelector('#moviesGrid');
-                jsonMovies.forEach(function(jsonMovies){
-                    renderMovieCard(jsonMovies, moviesGrid);
-                });
             }
         })
     })
