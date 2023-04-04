@@ -529,15 +529,45 @@ export const renderMovieCard = (film, parent) => {
         element.querySelector('.edt-submit-button').addEventListener('click', async function() {
             element.querySelector('.editor').classList.toggle('hide');
 
-            const titleEDT = element.querySelector(`#edt-title-${film.id}`);
+            const titleEDT = (usertitle) => {
+                if (usertitle === '') {
+                    return film.title
+                } else {
+                    return element.querySelector(`#edt-title-${film.id}`).value
+                }
+            }
+            let inputTitle = (element.querySelector(`#edt-title-${film.id}`).value);
 
-            const genresEDT = element.querySelector(`#edt-genre-${film.id}`).value;
+            const genresEDT = (usergenre) => {
+                if (usergenre === '') {
+                    return film.genres
+                } else {
+                    return element.querySelector(`#edt-genre-${film.id}`).value
+                }
+            }
+            let inputGenre = element.querySelector(`#edt-genre-${film.id}`).value;
 
             const ratingsEDT = document.getElementsByName(`edt-rate-${film.id}`);
 
-            const posterEDT = element.querySelector(`#edt-poster-${film.id}`).value;
+            const posterEDT = (userPoster) => {
+                if (userPoster === '') {
+                    return film.poster
+                } else {
+                    return element.querySelector(`#edt-poster-${film.id}`).value
+                }
+            }
 
-            const plotEDT = element.querySelector(`#edt-plot-${film.id}`).value;
+            let inputPoster = element.querySelector(`#edt-poster-${film.id}`).value;
+
+            const plotEDT = (userPlot) => {
+                if (userPlot === '') {
+                    return film.plot
+                } else {
+                    return element.querySelector(`#edt-plot-${film.id}`).value
+                }
+            }
+
+            let inputPlot = element.querySelector(`#edt-plot-${film.id}`).value;
 
             for(let i = 0; i < ratingsEDT.length; i++) {
                 if(ratingsEDT[i].checked)
@@ -547,11 +577,11 @@ export const renderMovieCard = (film, parent) => {
             // Documentaion will inform of the neccessary fields to a data send request
             let movieData = {
                 id: film.id,
-                title: titleEDT,
-                genres: genresEDT,
+                title: titleEDT(inputTitle),
+                genres: genresEDT(inputGenre),
                 rating: ratingEDT,
-                poster: posterEDT,
-                plot: plotEDT
+                poster: posterEDT(inputPoster),
+                plot: plotEDT (inputPlot)
             }
 
             if (ratingEDT === 5) {
@@ -657,36 +687,68 @@ export const renderFavCard = (film, parent) => {
         element.querySelector('.edt-submit-button').addEventListener('click', async function() {
             element.querySelector('.editor').classList.toggle('hide');
 
-            const titleFavEDT = element.querySelector(`#edt-title-${film.id}`).value;
+            const titleEDT = (usertitle) => {
+                if (usertitle === '') {
+                    return film.title
+                } else {
+                    return element.querySelector(`#edt-title-${film.id}`).value
+                }
+            }
+            let inputTitle = (element.querySelector(`#edt-title-${film.id}`).value);
 
-            const genresFavEDT = element.querySelector(`#edt-genre-${film.id}`).value;
+            const genresEDT = (usergenre) => {
+                if (usergenre === '') {
+                    return film.genres
+                } else {
+                    return element.querySelector(`#edt-genre-${film.id}`).value
+                }
+            }
+            let inputGenre = element.querySelector(`#edt-genre-${film.id}`).value;
 
-            const ratingsFavEDT = document.getElementsByName(`edt-fav-rate-${film.id}`);
+            const ratingsEDT = document.getElementsByName(`edt-rate-${film.id}`);
 
-            const posterFavEDT = element.querySelector(`#edt-poster-${film.id}`).value;
+            const posterEDT = (userPoster) => {
+                if (userPoster === '') {
+                    return film.poster
+                } else {
+                    return element.querySelector(`#edt-poster-${film.id}`).value
+                }
+            }
 
-            const plotFavEDT = element.querySelector(`#edt-plot-${film.id}`).value;
+            let inputPoster = element.querySelector(`#edt-poster-${film.id}`).value;
 
-            for(let i = 0; i < ratingsFavEDT.length; i++) {
-                if(ratingsFavEDT[i].checked)
-                    var ratingFavEDT = parseFloat(ratingsFavEDT[i].value);
+            const plotEDT = (userPlot) => {
+                if (userPlot === '') {
+                    return film.plot
+                } else {
+                    return element.querySelector(`#edt-plot-${film.id}`).value
+                }
+            }
+
+            let inputPlot = element.querySelector(`#edt-plot-${film.id}`).value;
+
+            for(let i = 0; i < ratingsEDT.length; i++) {
+                if(ratingsEDT[i].checked)
+                    var ratingEDT = parseFloat(ratingsEDT[i].value);
             }
 
             // Documentaion will inform of the neccessary fields to a data send request
             let movieData = {
                 id: film.id,
-                title: titleFavEDT,
-                genres: genresFavEDT,
-                rating: ratingFavEDT,
-                poster: posterFavEDT,
-                plot: plotFavEDT
+                title: titleEDT(inputTitle),
+                genres: genresEDT(inputGenre),
+                rating: ratingEDT,
+                poster: posterEDT(inputPoster),
+                plot: plotEDT (inputPlot)
             }
-            console.log(movieData)
 
+            if (ratingEDT === 5) {
                 let result =  await editFavMovie(movieData)
-                let jsonFav = await getFavorite();
-
-
+            } else {
+                removeFavMovie(film.id)
+                getPoster(film.title, ratingEDT)
+                // let result =  await editMovie(movieData)
+            }
 
         })
     })
