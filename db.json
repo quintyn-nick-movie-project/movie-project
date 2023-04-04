@@ -14,7 +14,7 @@
     "Biography",
     "Action",
     "Romance",
-    "Sci-Fi",
+    "Science Fiction",
     "War",
     "Western",
     "Horror",
@@ -25,42 +25,42 @@
     {
       "id": 1,
       "title": "Bladerunner",
-      "genres": "Sci-Fi",
+      "genres": ["Science Fiction"],
       "rating": 5,
       "plot": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
-      "poster": "https://www.themoviedb.org/t/p/w1280/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
+      "poster": "images/bladerunner.webp"
     },
     {
       "id": 2,
       "title": "Interstellar",
-      "genres": "Sci-Fi",
+      "genres": ["Science Fiction"],
       "rating": 5,
       "plot": "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on plans to save mankind by transporting Earth's population to a new home via a wormhole.",
-      "poster": "https://www.themoviedb.org/t/p/w1280/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+      "poster": "images/interstellar.jpg"
     },
     {
       "id": 3,
       "title": "Labyrinth",
-      "genres": "Fantasy",
+      "genres": ["Fantasy"],
       "rating": 5,
       "plot": "Sixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
-      "poster": "https://www.themoviedb.org/t/p/w1280/q2GimbyqxCeLkRfSMajtaHdwWg9.jpg"
+      "poster": "images/labyrinth.jpg"
     },
     {
       "id": 4,
       "title": "Mad Max: Fury Road",
-      "genres": "Action",
+      "genres": ["Action"],
       "rating": 5,
       "plot": "Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive.",
-      "poster": "https://www.themoviedb.org/t/p/w1280/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
+      "poster": "images/mad_max.jpg"
     },
     {
       "id": 5,
       "title": "As Above So Below",
-      "genres": "Horror",
+      "genres": ["Horror"],
       "rating": 5,
       "plot": "Archaeologist Scarlett Marlowe (Perdita Weeks) has devoted her whole life to finding one of history's greatest treasures: Flamel's Philosopher's Stone. According to legend, the artifact can grant eternal life and turn any metal into gold. When she learns that the stone is hidden underground in the Catacombs of Paris, she assembles a crew to guide and document her historic mission.",
-      "poster": "https://www.themoviedb.org/t/p/w1280/oJZSajKLJkoTOzSZQN2ZwRnPwHZ.jpg"
+      "poster": "images/as_above_so_below.jpeg"
     }
   ],
   "movies": [
@@ -242,7 +242,7 @@
       "genres": [
         "Action",
         "Adventure",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 2,
       "director": "Christopher Nolan",
@@ -485,7 +485,7 @@
       "genres": [
         "Comedy",
         "Drama",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 5,
       "director": "Peter Weir",
@@ -689,7 +689,7 @@
       "genres": [
         "Adventure",
         "Comedy",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 1,
       "director": "Garth Jennings",
@@ -752,7 +752,7 @@
       "runtime": "172",
       "genres": [
         "Drama",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 4,
       "director": "Tom Tykwer, Lana Wachowski, Lilly Wachowski",
@@ -891,12 +891,28 @@
       "genres": [
         "Adventure",
         "Drama",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 1,
       "director": "Christopher Nolan",
       "actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
       "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 119,
+      "title": "Shrek 2",
+      "year": "2004",
+      "runtime": "93",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 5,
+      "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+      "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, Julie Andrews",
+      "plot": "Princess Fiona's parents invite her and Shrek to dinner to celebrate her marriage. If only they knew the newlyweds were both ogres.",
       "poster": "https://via.placeholder.com/200x300"
     },
     {
@@ -944,6 +960,22 @@
       "director": "Doug Liman",
       "actors": "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody",
       "plot": "A bored married couple is surprised to learn that they are both assassins hired by competing agencies to kill each other.",
+      "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "id": 125,
+      "title": "Shrek Forever After",
+      "year": "2010",
+      "runtime": "93",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "rating": 1,
+      "director": "Mike Mitchell",
+      "actors": "Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas",
+      "plot": "Rumpelstiltskin tricks a mid-life crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpel rules supreme.",
       "poster": "https://via.placeholder.com/200x300"
     },
     {
@@ -1062,7 +1094,7 @@
       "genres": [
         "Drama",
         "Mystery",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 2,
       "director": "Alex Garland",
@@ -1141,7 +1173,7 @@
       "genres": [
         "Adventure",
         "Drama",
-        "Sci-Fi"
+        "Science Fiction"
       ],
       "rating": 5,
       "director": "Ridley Scott",

@@ -208,7 +208,7 @@ export function bgRender () {
 
 // GET MOVIES
 export const getFavorite = async () => {
-    try {
+        try {
         let url = 'http://localhost:3000/favorites';
         let response = await fetch(url);
         let data = await response.json();
@@ -219,7 +219,7 @@ export const getFavorite = async () => {
 }
 
 export const getMovies = async () => {
-    try {
+        try {
         let url = 'http://localhost:3000/movies';
         let response = await fetch(url);
         let data = await response.json();
@@ -284,6 +284,23 @@ export const removeMovie = async (movieID) => {
 }
 
 // EDIT MOVIE
+export const editFavMovie = async (movie) => {
+    try {
+        let url = `http://localhost:3000/favorites/${movie.id}`;
+        let options = {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(movie),
+        }
+        let response = await fetch(url, options);
+        let data = await response.json();
+        return data
+    } catch(error) {
+        console.log(error)
+    }
+}
 export const editMovie = async (movie) => {
     try {
         let url = `http://localhost:3000/movies/${movie.id}`;
@@ -302,6 +319,73 @@ export const editMovie = async (movie) => {
     }
 }
 
+const preCheck = (filmRate, starVal) => {
+    if (filmRate === starVal) {
+        return 'checked'
+    } else {
+        return ''
+    }
+}
+
+const preGenre = (filmGenre, dropValue) => {
+    if (filmGenre[0] == 'Science Fiction') {
+        return 'selected'
+    }
+    else if (filmGenre[0] === dropValue) {
+        return 'selected'
+    } else {
+        return ''
+    }
+}
+
+
+const getPoster = (title) => {
+    $('#term').focus(function(){
+        var full = $("#poster").has("img").length ? true : false;
+        if(full == false){
+            $('#poster').empty();
+        }
+    });
+
+    var getPoster = function(){
+
+        var film = $('#term').val();
+
+        if(film == ''){
+
+            $('#poster').html('<div class="alert"><strong>Oops!</strong> Try adding something into the search field.</div>');
+
+        } else {
+
+            $('#poster').html('<div class="alert"><strong>Loading...</strong></div>');
+
+            $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + film + "&callback=?", function(json) {
+                if (json != "Nothing found."){
+                    console.log(json);
+                    $('#poster').html('<p>Your search found: <strong>' + json.results[0].title + '</strong></p><img src=\"http://image.tmdb.org/t/p/w500/' + json.results[0].poster_path + '\" class=\"img-responsive\" >');
+                } else {
+                    $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=goonies&callback=?", function(json) {
+
+                        console.log(json);
+                        $('#poster').html('<div class="alert"><p>We\'re afraid nothing was found for that search.</p></div><p>Perhaps you were looking for The Goonies?</p><img id="thePoster" src="http://image.tmdb.org/t/p/w500/' + json[0].poster_path + ' class="img-responsive" />');
+                    });
+                }
+            });
+
+        }
+
+        return false;
+    }
+
+    $('#search').click(getPoster);
+    $('#term').keyup(function(event){
+        if(event.keyCode == 13){
+            getPoster();
+        }
+    });
+
+}
+
 
 // RENDER HTML
 export const renderMovieCard = (film, parent) => {
@@ -315,43 +399,43 @@ export const renderMovieCard = (film, parent) => {
             </label>
             <label for="edt-genre">  Genre
             <select id="edt-genre-${film.id}">
-                <option value="Comedy"> Comedy </option>
-                <option value="Fantasy"> Fantasy </option>
-                <option value="Crime"> Crime </option>
-                <option value="Drama"> Drama </option>
-                <option value="Music"> Music </option>
-                <option value="Adventure"> Adventure </option>
-                <option value="History"> History </option>
-                <option value="Thriller"> Thriller </option>
-                <option value="Animation"> Animation </option>
-                <option value="Family"> Family </option>
-                <option value="Mystery"> Mystery </option>
-                <option value="Biography"> Biography </option>
-                <option value="Action"> Action </option>
-                <option value="Romance"> Romance </option>
-                <option value="Sci-Fi"> Sci-Fi </option>
-                <option value="War"> War </option>
-                <option value="Western"> Western </option>
-                <option value="Horror"> Horror </option>
-                <option value="Musical"> Musical </option>
+                <option value="Comedy" ${preGenre(film.genres, 'Comedy' )}> Comedy </option>
+                <option value="Fantasy" ${preGenre(film.genres, 'Fantasy' )}> Fantasy </option>
+                <option value="Crime" ${preGenre(film.genres, 'Crime' )}> Crime </option>
+                <option value="Drama" ${preGenre(film.genres, 'Drama' )}> Drama </option>
+                <option value="Music" ${preGenre(film.genres, 'Music' )}> Music </option>
+                <option value="Adventure" ${preGenre(film.genres, 'Adventure' )}> Adventure </option>
+                <option value="History" ${preGenre(film.genres, 'History' )}> History </option>
+                <option value="Thriller" ${preGenre(film.genres, 'Thriller' )}> Thriller </option>
+                <option value="Animation" ${preGenre(film.genres, 'Animation' )}> Animation </option>
+                <option value="Family" ${preGenre(film.genres, 'Family' )}> Family </option>
+                <option value="Mystery" ${preGenre(film.genres, 'Mystery' )}> Mystery </option>
+                <option value="Biography" ${preGenre(film.genres, 'Biography' )}> Biography </option>
+                <option value="Action" ${preGenre(film.genres, 'Action' )}> Action </option>
+                <option value="Romance" ${preGenre(film.genres, 'Romance' )}> Romance </option>              
+                <option value="War" ${preGenre(film.genres, 'War' )}> War </option>
+                <option value="Western" ${preGenre(film.genres, 'Western' )}> Western </option>
+                <option value="Horror" ${preGenre(film.genres, 'Horror' )}> Horror </option>
+                <option value="Musical" ${preGenre(film.genres, 'Musical' )}> Musical </option>
+                <option value="Sci-Fi" ${preGenre(film.genres, "Sci-Fi" )}> Sci-Fi </option>
             </select>
             </label>
             <div class="rating" id="edt-rating-${film.id}">
-                <input type="radio" id="star5-${film.id}" name="edt-rate-${film.id}" value="5" />
+                <input type="radio" id="star5-${film.id}" name="edt-rate-${film.id}" value="5" ${preCheck(film.rating, 5)}/>
                 <label for="star5-${film.id}">5</label>
-                <input type="radio" id="star4-${film.id}" name="edt-rate-${film.id}" value="4" />
+                <input type="radio" id="star4-${film.id}" name="edt-rate-${film.id}" value="4" ${preCheck(film.rating, 4)}/>
                 <label for="star4-${film.id}">4</label>
-                <input type="radio" id="star3-${film.id}" name="edt-rate-${film.id}" value="3" />
+                <input type="radio" id="star3-${film.id}" name="edt-rate-${film.id}" value="3" ${preCheck(film.rating, 3)}/>
                 <label for="star3-${film.id}">3</label>
-                <input type="radio" id="star2-${film.id}" name="edt-rate-${film.id}" value="2" />
+                <input type="radio" id="star2-${film.id}" name="edt-rate-${film.id}" value="2" ${preCheck(film.rating, 2)}/>
                 <label for="star2-${film.id}">2</label>
-                <input type="radio" id="star1-${film.id}" name="edt-rate-${film.id}" value="1" />
+                <input type="radio" id="star1-${film.id}" name="edt-rate-${film.id}" value="1" ${preCheck(film.rating, 1)}/>
                 <label for="star1-${film.id}"></label>
             </div>
             <label for="edt-plot">Plot</label>
-            <input id="edt-plot-${film.id}" type="text">
+            <input id="edt-plot-${film.id}" type="text" placeholder="${film.plot}">
             <label for="edt-poster">Poster</label>
-            <input id="edt-poster-${film.id}" type="url">
+            <input id="edt-poster-${film.id}" type="url" placeholder="${film.poster}">
             
             <button class="edt-submit-button">EDIT</button>
         </div>
@@ -380,6 +464,7 @@ export const renderMovieCard = (film, parent) => {
     element.querySelector('.edt-button').addEventListener('click', async function () {
         element.querySelector('.editor').classList.toggle('hide');
         element.querySelector('.edt-submit-button').addEventListener('click', async function() {
+            element.querySelector('.editor').classList.toggle('hide');
 
             const titleEDT = element.querySelector(`#edt-title-${film.id}`).value;
             console.log(titleEDT)
@@ -412,9 +497,23 @@ export const renderMovieCard = (film, parent) => {
             }
 
             if (ratingEDT === 5) {
-                let result =  await editMovie(movieData)
+                let result =  await editFavMovie(movieData)
+                let jsonFav = await getFavorite();
+                console.log(jsonFav);
+                // Render the movies
+                const favGrid = document.querySelector('#favGrid');
+                jsonFav.forEach(function(jsonFav){
+                    renderMovieCard(jsonFav, favGrid);
+                });
             } else {
                 let result =  await editMovie(movieData)
+                let jsonMovies = await getMovies();
+                console.log(jsonMovies);
+                // Render the movies
+                const moviesGrid = document.querySelector('#moviesGrid');
+                jsonMovies.forEach(function(jsonMovies){
+                    renderMovieCard(jsonMovies, moviesGrid);
+                });
             }
         })
     })
@@ -432,43 +531,44 @@ export const renderFavCard = (film, parent) => {
             <input id="edt-title-${film.id}" type="text" placeholder="${film.title}">
             <label for="edt-genre">  Genre</label>
             <select id="edt-genre-${film.id}">
-                <option value="Comedy"> Comedy </option>
-                <option value="Fantasy"> Fantasy </option>
-                <option value="Crime"> Crime </option>
-                <option value="Drama"> Drama </option>
-                <option value="Music"> Music </option>
-                <option value="Adventure"> Adventure </option>
-                <option value="History"> History </option>
-                <option value="Thriller"> Thriller </option>
-                <option value="Animation"> Animation </option>
-                <option value="Family"> Family </option>
-                <option value="Mystery"> Mystery </option>
-                <option value="Biography"> Biography </option>
-                <option value="Action"> Action </option>
-                <option value="Romance"> Romance </option>
-                <option value="Sci-Fi"> Sci-Fi </option>
-                <option value="War"> War </option>
-                <option value="Western"> Western </option>
-                <option value="Horror"> Horror </option>
-                <option value="Musical"> Musical </option>
+                 <option value="Comedy" ${preGenre(film.genres, 'Comedy' )}> Comedy </option>
+                <option value="Fantasy" ${preGenre(film.genres, 'Fantasy' )}> Fantasy </option>
+                <option value="Crime" ${preGenre(film.genres, 'Crime' )}> Crime </option>
+                <option value="Drama" ${preGenre(film.genres, 'Drama' )}> Drama </option>
+                <option value="Music" ${preGenre(film.genres, 'Music' )}> Music </option>
+                <option value="Adventure" ${preGenre(film.genres, 'Adventure' )}> Adventure </option>
+                <option value="History" ${preGenre(film.genres, 'History' )}> History </option>
+                <option value="Thriller" ${preGenre(film.genres, 'Thriller' )}> Thriller </option>
+                <option value="Animation" ${preGenre(film.genres, 'Animation' )}> Animation </option>
+                <option value="Family" ${preGenre(film.genres, 'Family' )}> Family </option>
+                <option value="Mystery" ${preGenre(film.genres, 'Mystery' )}> Mystery </option>
+                <option value="Biography" ${preGenre(film.genres, 'Biography' )}> Biography </option>
+                <option value="Action" ${preGenre(film.genres, 'Action' )}> Action </option>
+                <option value="Romance" ${preGenre(film.genres, 'Romance' )}> Romance </option>
+                <option value="War" ${preGenre(film.genres, 'War' )}> War </option>
+                <option value="Western" ${preGenre(film.genres, 'Western' )}> Western </option>
+                <option value="Musical" ${preGenre(film.genres, 'Musical' )}> Musical </option>
+                <option value="Horror" ${preGenre(film.genres, 'Horror' )}> Horror </option>
+                 <option value="Sci-Fi" ${preGenre(film.genres, "Sci-Fi" )}> Sci-Fi </option>
+                
             </select>
             <span>Grade</span>
             <div class="rating" id="edt-fav-rating-${film.id}">
-                <input type="radio" id="star5-fav-${film.id}" name="edt-fav-rate-${film.id}" value="5" />
+                <input type="radio" id="star5-fav-${film.id}" name="edt-fav-rate-${film.id}" value="5" ${preCheck(film.rating, 5)}/>
                 <label for="star5-fav-${film.id}">5</label>
-                <input type="radio" id="star4-fav-${film.id}" name="edt-fav-rate-${film.id}" value="4" />
+                <input type="radio" id="star4-fav-${film.id}" name="edt-fav-rate-${film.id}" value="4" ${preCheck(film.rating, 4)}/>
                 <label for="star4-fav-${film.id}">4</label>
-                <input type="radio" id="star3-fav-${film.id}" name="edt-fav-rate-${film.id}" value="3" />
+                <input type="radio" id="star3-fav-${film.id}" name="edt-fav-rate-${film.id}" value="3" ${preCheck(film.rating, 3)}/>
                 <label for="star3-fav-${film.id}">3</label>
-                <input type="radio" id="star2-fav-${film.id}" name="edt-fav-rate-${film.id}" value="2" />
+                <input type="radio" id="star2-fav-${film.id}" name="edt-fav-rate-${film.id}" value="2" ${preCheck(film.rating, 2)}/>
                 <label for="star2-fav-${film.id}">2</label>
-                <input type="radio" id="star1-fav-${film.id}" name="edt-fav-rate-${film.id}" value="1" />
+                <input type="radio" id="star1-fav-${film.id}" name="edt-fav-rate-${film.id}" value="1" ${preCheck(film.rating, 1)}/>
                 <label for="star1-fav-${film.id}"></label>
             </div>
             <label for="edt-plot">Plot</label>
-            <input id="edt-plot-${film.id}" type="text" placeholder="Film Description">
+            <input id="edt-plot-${film.id}" type="text" placeholder="${film.plot}">
             <label for="edt-poster">Poster</label>
-            <input id="edt-poster-${film.id}" type="url" placeholder="Film Poster URL">
+            <input id="edt-poster-${film.id}" type="url" placeholder="${film.poster}">
             
             <button class="edt-submit-button">EDIT</button>
         </div>
@@ -497,6 +597,7 @@ export const renderFavCard = (film, parent) => {
     element.querySelector('.edt-button').addEventListener('click', async function () {
         element.querySelector('.editor').classList.toggle('hide');
         element.querySelector('.edt-submit-button').addEventListener('click', async function() {
+            element.querySelector('.editor').classList.toggle('hide');
 
             const titleFavEDT = element.querySelector(`#edt-title-${film.id}`).value;
 
@@ -524,25 +625,11 @@ export const renderFavCard = (film, parent) => {
             }
             console.log(movieData)
 
-            if (rating === 5) {
-                let result =  await editMovie(movieData)
+                let result =  await editFavMovie(movieData)
                 let jsonFav = await getFavorite();
-                console.log(jsonFav);
-                // Render the movies
-                const favGrid = document.querySelector('#favGrid');
-                jsonFav.forEach(function(jsonFav){
-                    renderMovieCard(jsonFav, favGrid);
-                });
-            } else {
-                let result =  await editMovie(movieData)
-                let jsonMovies = await getMovies();
-                console.log(jsonMovies);
-                // Render the movies
-                const moviesGrid = document.querySelector('#moviesGrid');
-                jsonMovies.forEach(function(jsonMovies){
-                    renderMovieCard(jsonMovies, moviesGrid);
-                });
-            }
+
+
+
         })
     })
 

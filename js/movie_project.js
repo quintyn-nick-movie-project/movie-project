@@ -17,6 +17,8 @@ bgRender();
 
     let intro = document.getElementById('intro');
     let content = document.getElementById('content');
+    let movyGrid = document.getElementById('moviesGrid')
+    let favyGrid = document.getElementById('favGrid')
 
 //  GET MOVIES
     window.addEventListener('load', async () => {
@@ -97,23 +99,28 @@ bgRender();
 
     })
 
-// EDIT MOVIE
-    let edtButtons = document.querySelectorAll('.edt-submit-button');
-    edtButtons.forEach(n => {
-        n.addEventListener('click', async () => {
-            let movies = document.querySelectorAll('#moviesGrid')
-            movies.innerHTML = ''
-            let jsonMovies = await getMovies();
-            console.log(jsonMovies);
-            const moviesGrid = document.querySelector('#moviesGrid');
-            jsonMovies.forEach(function(jsonMovies){
-                renderMovieCard(jsonMovies, moviesGrid);
-            });
-        })
+//  REFRESH MOVIES
+    document.querySelector('#refresh-grid').addEventListener('click', async() => {
+        favyGrid.innerHTML = ''
+        movyGrid.innerHTML = ''
+        // Get Favorites
+        let refFav = await getFavorite();
 
+        // Get Movies
+        let refMovies = await getMovies();
+
+        // Render Favorites
+        const favGrid = document.querySelector('#favGrid');
+        refFav.forEach(function(Fav){
+            renderFavCard(Fav, favGrid);
+        });
+
+        // Render Movies
+        const moviesGrid = document.querySelector('#moviesGrid');
+        refMovies.forEach(function(Mov){
+            renderMovieCard(Mov, moviesGrid);
+        });
     })
 
-
 })();
-
 

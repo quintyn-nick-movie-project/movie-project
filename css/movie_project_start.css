@@ -273,6 +273,7 @@ header {
     border: 1px solid white;
     border-radius: 0 5px 5px 0;
     height: 302px;
+    overflow: auto;
 }
 
 #userAddGrid {
@@ -341,6 +342,7 @@ header {
     border-radius: 0 5px 5px 0;
     height: 302px;
     width: 300px;
+    overflow: auto;
 }
 
 .film-info {
@@ -449,6 +451,35 @@ header {
     color: white;
     background-image: linear-gradient(225deg, #1cbffa, #1cc4fa 30%, #00eb99);
     box-shadow: -2px 2px 8px rgba(94, 213, 222, 0.67);
+}
+
+.edt-submit-button {
+    color: white;
+    height: 25px;
+    width: 55px;
+    line-height: 0;
+    text-align: center;
+    background: black;
+    top: 0;
+    right: 0;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 0 0 0 10px;
+    font-weight: bold;
+}
+
+.edt-submit-button:hover {
+    border: 0;
+    color: white;
+    background-image: linear-gradient(225deg, #1cbffa, #1cc4fa 30%, #00eb99);
+    box-shadow: -2px 2px 8px rgba(94, 213, 222, 0.67);
+}
+
+#refresh-grid {
+    color: white;
+    background: black;
+    border: 1px solid white;
+    border-radius: 0 5px 0 5px;
 }
 
 
