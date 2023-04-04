@@ -74,7 +74,11 @@
     },
     {
       "title": "Hulk",
-      "genres": "Sci-Fi, Adventure, Action",
+      "genres": [
+        "Sci-Fi",
+        "Adventure",
+        "Action"
+      ],
       "rating": 5,
       "poster": "http://image.tmdb.org/t/p/w500/qnngKqAcqfH2pBxDoKu5lxzSbTo.jpg",
       "plot": "Bruce Banner, a genetics researcher with a tragic past, suffers massive radiation exposure in his laboratory that causes him to transform into a raging green monster when he gets angry.",
@@ -142,22 +146,6 @@
       "actors": "Tom Cruise, Kenneth Branagh, Bill Nighy, Tom Wilkinson",
       "plot": "A dramatization of the 20 July assassination and political coup plot by desperate renegade German Army officers against Hitler during World War II.",
       "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8eoRtXswC8IQDsqW7iJWO56NhAv.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Ratatouille",
-      "year": "2007",
-      "runtime": "111",
-      "genres": [
-        "Animation",
-        "Comedy",
-        "Family"
-      ],
-      "rating": 1,
-      "director": "Brad Bird, Jan Pinkava",
-      "actors": "Patton Oswalt, Ian Holm, Lou Romano, Brian Dennehy",
-      "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg"
     },
     {
       "id": 11,

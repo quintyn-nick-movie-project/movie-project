@@ -286,6 +286,21 @@ export const removeMovie = async (movieID) => {
     }
 }
 
+export const removeFavMovie = async (movieID) => {
+    try {
+        let url = `http://localhost:3000/favorites/${movieID}`;
+        let options = {
+            method: 'DELETE'
+        }
+        let response = await fetch(url, options);
+        console.log(`MOVIE DELETE: ${response}`);
+        // let data = await response.json();
+        // return data
+    } catch(error) {
+        console.log(error)
+    }
+}
+
 
 // EDIT MOVIE
 export const editFavMovie = async (movie) => {
@@ -391,19 +406,19 @@ const genreTranslate = (genreID) => {
             }
         }
     )
-    return genreName.join(', ')
+    return genreName
 }
 
 
 
-export const getPoster = async function(title, rating){
+export const getPoster = async function(usertitle, rating){
     // if(title === ''){
     //     return 'https://via.placeholder.com/200x300'
     // } else {
-    $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + title + "&callback=?", function(json) {
+    $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + usertitle + "&callback=?", function(json) {
         console.log(json)
         let poster = 'http://image.tmdb.org/t/p/w500' + json.results[0].poster_path
-
+        const title = json.results[0].original_title
         const genres = genreTranslate(json.results[0].genre_ids);
         const plot = json.results[0].overview
 
@@ -423,18 +438,14 @@ export const getPoster = async function(title, rating){
             console.log(jsonFav);
             // Render the movies
             const favGrid = document.querySelector('#favGrid');
-            jsonFav.forEach(function(jsonFav){
-                renderMovieCard(jsonFav, favGrid);
-            });
+            renderMovieCard(jsonFav, favGrid);
         } else {
             let result =  setMovies(movieData)
             let jsonMovies = getMovies();
             console.log(jsonMovies);
             // Render the movies
             const moviesGrid = document.querySelector('#moviesGrid');
-            jsonMovies.forEach(function(jsonMovies){
-                renderMovieCard(jsonMovies, moviesGrid);
-            });
+            renderMovieCard(jsonMovies, moviesGrid);
         }
     })
 }
@@ -518,20 +529,15 @@ export const renderMovieCard = (film, parent) => {
         element.querySelector('.edt-submit-button').addEventListener('click', async function() {
             element.querySelector('.editor').classList.toggle('hide');
 
-            const titleEDT = element.querySelector(`#edt-title-${film.id}`).value;
-            console.log(titleEDT)
+            const titleEDT = element.querySelector(`#edt-title-${film.id}`);
 
             const genresEDT = element.querySelector(`#edt-genre-${film.id}`).value;
-            console.log(genresEDT)
 
             const ratingsEDT = document.getElementsByName(`edt-rate-${film.id}`);
-            console.log(ratingsEDT)
 
             const posterEDT = element.querySelector(`#edt-poster-${film.id}`).value;
-            console.log(posterEDT)
 
             const plotEDT = element.querySelector(`#edt-plot-${film.id}`).value;
-            console.log(plotEDT)
 
             for(let i = 0; i < ratingsEDT.length; i++) {
                 if(ratingsEDT[i].checked)
@@ -642,7 +648,7 @@ export const renderFavCard = (film, parent) => {
     });
     element.querySelector('.rmv-button').addEventListener('click', function(){
         element.remove();
-        removeMovie(film.id);
+        removeFavMovie(film.id);
     });
 
     //  EDIT MOVIE
