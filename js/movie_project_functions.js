@@ -206,6 +206,7 @@ export function bgRender () {
 
 }
 
+
 // GET MOVIES
 export const getFavorite = async () => {
         try {
@@ -219,7 +220,7 @@ export const getFavorite = async () => {
 }
 
 export const getMovies = async () => {
-        try {
+    try {
         let url = 'http://localhost:3000/movies';
         let response = await fetch(url);
         let data = await response.json();
@@ -228,6 +229,7 @@ export const getMovies = async () => {
         console.log(error)
     }
 }
+
 
 // SET MOVIES
 export const setFavorite = async (movie) => {
@@ -267,6 +269,7 @@ export const setMovies = async (movie) => {
     }
 }
 
+
 // REMOVE MOVIE
 export const removeMovie = async (movieID) => {
     try {
@@ -282,6 +285,7 @@ export const removeMovie = async (movieID) => {
         console.log(error)
     }
 }
+
 
 // EDIT MOVIE
 export const editFavMovie = async (movie) => {
@@ -301,6 +305,7 @@ export const editFavMovie = async (movie) => {
         console.log(error)
     }
 }
+
 export const editMovie = async (movie) => {
     try {
         let url = `http://localhost:3000/movies/${movie.id}`;
@@ -319,6 +324,8 @@ export const editMovie = async (movie) => {
     }
 }
 
+
+// MOVIE CARD CONDITIONALs
 const preCheck = (filmRate, starVal) => {
     if (filmRate === starVal) {
         return 'checked'
@@ -328,7 +335,7 @@ const preCheck = (filmRate, starVal) => {
 }
 
 const preGenre = (filmGenre, dropValue) => {
-    if (filmGenre[0] == 'Science Fiction') {
+    if (filmGenre[0] === 'Science Fiction') {
         return 'selected'
     }
     else if (filmGenre[0] === dropValue) {
@@ -338,53 +345,20 @@ const preGenre = (filmGenre, dropValue) => {
     }
 }
 
+export const getPoster = async function(title){
+    if(title === ''){
+        return 'https://via.placeholder.com/200x300'
+    } else {
+        $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + title + "&callback=?", function(json) {
 
-const getPoster = (title) => {
-    $('#term').focus(function(){
-        var full = $("#poster").has("img").length ? true : false;
-        if(full == false){
-            $('#poster').empty();
-        }
-    });
-
-    var getPoster = function(){
-
-        var film = $('#term').val();
-
-        if(film == ''){
-
-            $('#poster').html('<div class="alert"><strong>Oops!</strong> Try adding something into the search field.</div>');
-
-        } else {
-
-            $('#poster').html('<div class="alert"><strong>Loading...</strong></div>');
-
-            $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + film + "&callback=?", function(json) {
-                if (json != "Nothing found."){
-                    console.log(json);
-                    $('#poster').html('<p>Your search found: <strong>' + json.results[0].title + '</strong></p><img src=\"http://image.tmdb.org/t/p/w500/' + json.results[0].poster_path + '\" class=\"img-responsive\" >');
-                } else {
-                    $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=goonies&callback=?", function(json) {
-
-                        console.log(json);
-                        $('#poster').html('<div class="alert"><p>We\'re afraid nothing was found for that search.</p></div><p>Perhaps you were looking for The Goonies?</p><img id="thePoster" src="http://image.tmdb.org/t/p/w500/' + json[0].poster_path + ' class="img-responsive" />');
-                    });
-                }
-            });
-
-        }
-
-        return false;
+        let bob = 'http://image.tmdb.org/t/p/w500' + json.results[0].poster_path
+        console.log(bob)
+        })
     }
-
-    $('#search').click(getPoster);
-    $('#term').keyup(function(event){
-        if(event.keyCode == 13){
-            getPoster();
-        }
-    });
-
 }
+
+
+
 
 
 // RENDER HTML
@@ -412,12 +386,12 @@ export const renderMovieCard = (film, parent) => {
                 <option value="Mystery" ${preGenre(film.genres, 'Mystery' )}> Mystery </option>
                 <option value="Biography" ${preGenre(film.genres, 'Biography' )}> Biography </option>
                 <option value="Action" ${preGenre(film.genres, 'Action' )}> Action </option>
-                <option value="Romance" ${preGenre(film.genres, 'Romance' )}> Romance </option>              
+                <option value="Romance" ${preGenre(film.genres, 'Romance' )}> Romance </option>             
                 <option value="War" ${preGenre(film.genres, 'War' )}> War </option>
                 <option value="Western" ${preGenre(film.genres, 'Western' )}> Western </option>
                 <option value="Horror" ${preGenre(film.genres, 'Horror' )}> Horror </option>
                 <option value="Musical" ${preGenre(film.genres, 'Musical' )}> Musical </option>
-                <option value="Sci-Fi" ${preGenre(film.genres, "Sci-Fi" )}> Sci-Fi </option>
+                <option value="Sci-Fi" ${preGenre(film.genres, "Science Fiction" )}> Sci-Fi </option>
             </select>
             </label>
             <div class="rating" id="edt-rating-${film.id}">
@@ -549,7 +523,7 @@ export const renderFavCard = (film, parent) => {
                 <option value="Western" ${preGenre(film.genres, 'Western' )}> Western </option>
                 <option value="Musical" ${preGenre(film.genres, 'Musical' )}> Musical </option>
                 <option value="Horror" ${preGenre(film.genres, 'Horror' )}> Horror </option>
-                 <option value="Sci-Fi" ${preGenre(film.genres, "Sci-Fi" )}> Sci-Fi </option>
+                 <option value="Sci-Fi" ${preGenre(film.genres, "Science Fiction" )}> Sci-Fi </option>
                 
             </select>
             <span>Grade</span>

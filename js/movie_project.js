@@ -6,7 +6,7 @@ import {
     renderMovieCard,
     renderFavCard,
     setFavorite,
-    setMovies
+    setMovies, getPoster
 } from "./movie_project_functions.js"
 
 bgRender();
@@ -27,11 +27,9 @@ bgRender();
 
         // Get Favorites
         let jsonFav = await getFavorite();
-        console.log(jsonFav);
 
         // Get Movies
         let jsonMovies = await getMovies();
-        console.log(jsonMovies);
 
         // Render Favorites
         const favGrid = document.querySelector('#favGrid');
@@ -48,10 +46,8 @@ bgRender();
         content.classList.remove('hide')
     })
 
-
 //  ADD NEW MOVIE
     document.querySelector('#grade-button').addEventListener('click', async function () {
-
         const title = document.querySelector('#title').value;
 
         const genres = document.querySelector('#genre').value;
@@ -59,7 +55,7 @@ bgRender();
         const ratings = document.getElementsByName('rate');
         console.log(ratings)
 
-        const poster = 'https://via.placeholder.com/200x300'
+        const poster = getPoster(title)
 
         const plot = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi architecto earum eius eos esse iste porro ratione rem veniam!"
 
