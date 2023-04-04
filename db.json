@@ -71,6 +71,14 @@
       "rating": 5,
       "plot": "Archaeologist Scarlett Marlowe (Perdita Weeks) has devoted her whole life to finding one of history's greatest treasures: Flamel's Philosopher's Stone. According to legend, the artifact can grant eternal life and turn any metal into gold. When she learns that the stone is hidden underground in the Catacombs of Paris, she assembles a crew to guide and document her historic mission.",
       "poster": "https://via.placeholder.com/200x300"
+    },
+    {
+      "title": "Hulk",
+      "genres": "Sci-Fi, Adventure, Action",
+      "rating": 5,
+      "poster": "http://image.tmdb.org/t/p/w500/qnngKqAcqfH2pBxDoKu5lxzSbTo.jpg",
+      "plot": "Bruce Banner, a genetics researcher with a tragic past, suffers massive radiation exposure in his laboratory that causes him to transform into a raging green monster when he gets angry.",
+      "id": 6
     }
   ],
   "movies": [

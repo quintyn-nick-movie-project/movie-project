@@ -49,50 +49,13 @@ bgRender();
 //  ADD NEW MOVIE
     document.querySelector('#grade-button').addEventListener('click', async function () {
         const title = document.querySelector('#title').value;
-
-        const genres = document.querySelector('#genre').value;
-
-        const ratings = document.getElementsByName('rate');
-        console.log(ratings)
-
-        const poster = getPoster(title)
-
-        const plot = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi architecto earum eius eos esse iste porro ratione rem veniam!"
-
-        for(let i = 0; i < ratings.length; i++) {
-            if(ratings[i].checked)
-                var rating = parseFloat(ratings[i].value);
+        const localRate = document.getElementsByName('rate');
+        for(let i = 0; i < localRate.length; i++) {
+            if(localRate[i].checked)
+                var rating = parseFloat(localRate[i].value);
         }
 
-        // Documentaion will inform of the neccessary fields to a data send request
-        let movieData = {
-            title,
-            genres,
-            rating,
-            poster,
-            plot
-        }
-
-        if (rating === 5) {
-            let result =  await setFavorite(movieData)
-            let jsonFav = await getFavorite();
-            console.log(jsonFav);
-            // Render the movies
-            const favGrid = document.querySelector('#favGrid');
-            jsonFav.forEach(function(jsonFav){
-                renderMovieCard(jsonFav, favGrid);
-        });
-        } else {
-            let result =  await setMovies(movieData)
-            let jsonMovies = await getMovies();
-            console.log(jsonMovies);
-            // Render the movies
-            const moviesGrid = document.querySelector('#moviesGrid');
-            jsonMovies.forEach(function(jsonMovies){
-                renderMovieCard(jsonMovies, moviesGrid);
-        });
-        }
-
+        getPoster(title, rating)
     })
 
 //  REFRESH MOVIES

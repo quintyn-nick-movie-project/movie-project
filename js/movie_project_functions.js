@@ -345,21 +345,99 @@ const preGenre = (filmGenre, dropValue) => {
     }
 }
 
-export const getPoster = async function(title){
-    if(title === ''){
-        return 'https://via.placeholder.com/200x300'
-    } else {
-        $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + title + "&callback=?", function(json) {
-
-        let bob = 'http://image.tmdb.org/t/p/w500' + json.results[0].poster_path
-        console.log(bob)
-        })
-    }
+const genreTranslate = (genreID) => {
+    let genreName = [];
+    genreID.forEach(n => {
+            if (n === 28) {
+                genreName.push('Action')
+            } else if (n === 12) {
+                genreName.push('Adventure')
+            }  else if (n === 16) {
+                genreName.push('Animation')
+            }  else if (n === 35) {
+                genreName.push('Comedy')
+            }  else if (n === 80) {
+                genreName.push('Crime')
+            }  else if (n === 99) {
+                genreName.push('Documentary')
+            }  else if (n === 18) {
+                genreName.push('Drama')
+            }  else if (n === 10751) {
+                genreName.push('Family')
+            }  else if (n === 14) {
+                genreName.push('Fantasy')
+            }  else if (n === 36) {
+                genreName.push('History')
+            }  else if (n === 27) {
+                genreName.push('Horror')
+            }  else if (n === 10402) {
+                genreName.push('Music')
+            }  else if (n === 9648) {
+                genreName.push('Mystery')
+            }  else if (n === 10749) {
+                genreName.push('Romance')
+            }  else if (n === 878) {
+                genreName.push('Sci-Fi')
+            }  else if (n === 10770) {
+                genreName.push('TV Movie')
+            }  else if (n === 53) {
+                genreName.push('Thriller')
+            }  else if (n === 10752) {
+                genreName.push('War')
+            }  else if (n === 37) {
+                genreName.push('Western')
+            } else {
+                genreName += 'unknown'
+            }
+        }
+    )
+    return genreName.join(', ')
 }
 
 
 
+export const getPoster = async function(title, rating){
+    // if(title === ''){
+    //     return 'https://via.placeholder.com/200x300'
+    // } else {
+    $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=" + title + "&callback=?", function(json) {
+        console.log(json)
+        let poster = 'http://image.tmdb.org/t/p/w500' + json.results[0].poster_path
 
+        const genres = genreTranslate(json.results[0].genre_ids);
+        const plot = json.results[0].overview
+
+        let movieData = {
+            title,
+            genres,
+            rating,
+            poster,
+            plot
+        }
+
+        console.log(movieData)
+
+        if (rating === 5) {
+            let result =  setFavorite(movieData)
+            let jsonFav = getFavorite();
+            console.log(jsonFav);
+            // Render the movies
+            const favGrid = document.querySelector('#favGrid');
+            jsonFav.forEach(function(jsonFav){
+                renderMovieCard(jsonFav, favGrid);
+            });
+        } else {
+            let result =  setMovies(movieData)
+            let jsonMovies = getMovies();
+            console.log(jsonMovies);
+            // Render the movies
+            const moviesGrid = document.querySelector('#moviesGrid');
+            jsonMovies.forEach(function(jsonMovies){
+                renderMovieCard(jsonMovies, moviesGrid);
+            });
+        }
+    })
+}
 
 // RENDER HTML
 export const renderMovieCard = (film, parent) => {
