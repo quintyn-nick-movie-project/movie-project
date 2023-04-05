@@ -51,10 +51,10 @@ bgRender();
         const title = document.querySelector('#title').value;
         const localRate = document.getElementsByName('rate');
         for(let i = 0; i < localRate.length; i++) {
-            if(localRate[i].checked)
+            if(localRate[i].checked) {
                 var rating = parseFloat(localRate[i].value);
+            }
         }
-
         getPoster(title, rating)
     })
 

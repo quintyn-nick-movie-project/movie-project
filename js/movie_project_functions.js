@@ -406,7 +406,7 @@ const genreTranslate = (genreID) => {
             }
         }
     )
-    return genreName
+    return genreName[0]
 }
 
 
@@ -434,18 +434,8 @@ export const getPoster = async function(usertitle, rating){
 
         if (rating === 5) {
             let result =  setFavorite(movieData)
-            let jsonFav = getFavorite();
-            console.log(jsonFav);
-            // Render the movies
-            const favGrid = document.querySelector('#favGrid');
-            renderMovieCard(jsonFav, favGrid);
         } else {
             let result =  setMovies(movieData)
-            let jsonMovies = getMovies();
-            console.log(jsonMovies);
-            // Render the movies
-            const moviesGrid = document.querySelector('#moviesGrid');
-            renderMovieCard(jsonMovies, moviesGrid);
         }
     })
 }
@@ -705,7 +695,8 @@ export const renderFavCard = (film, parent) => {
             }
             let inputGenre = element.querySelector(`#edt-genre-${film.id}`).value;
 
-            const ratingsEDT = document.getElementsByName(`edt-rate-${film.id}`);
+            const ratingsEDT = document.getElementsByName(`edt-fav-rate-${film.id}`);
+            console.log(ratingsEDT)
 
             const posterEDT = (userPoster) => {
                 if (userPoster === '') {
@@ -728,9 +719,11 @@ export const renderFavCard = (film, parent) => {
             let inputPlot = element.querySelector(`#edt-plot-${film.id}`).value;
 
             for(let i = 0; i < ratingsEDT.length; i++) {
-                if(ratingsEDT[i].checked)
+                if(ratingsEDT[i].checked) {
                     var ratingEDT = parseFloat(ratingsEDT[i].value);
+                }
             }
+
 
             // Documentaion will inform of the neccessary fields to a data send request
             let movieData = {
@@ -746,8 +739,7 @@ export const renderFavCard = (film, parent) => {
                 let result =  await editFavMovie(movieData)
             } else {
                 removeFavMovie(film.id)
-                getPoster(film.title, ratingEDT)
-                // let result =  await editMovie(movieData)
+                getPoster(titleEDT(inputTitle), ratingEDT)
             }
 
         })

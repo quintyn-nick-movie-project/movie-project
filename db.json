@@ -25,9 +25,7 @@
     {
       "id": 1,
       "title": "Blade Runner",
-      "genres": [
-        "Science Fiction"
-      ],
+      "genres": "Sci-Fi",
       "rating": 5,
       "plot": "Deckard (Harrison Ford) is forced by the police Boss (M. Emmet Walsh) to continue his old job as Replicant Hunter. His assignment: eliminate four escaped Replicants from the colonies who have returned to Earth. Before starting the job, Deckard goes to the Tyrell Corporation and he meets Rachel (Sean Young), a Replicant girl he falls in love with.",
       "poster": "https://www.themoviedb.org/t/p/w1280/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg"
@@ -77,16 +75,10 @@
     {
       "id": 1,
       "title": "Beetlejuice",
-      "year": "1988",
-      "runtime": "92",
-      "genres": [
-        "Comedy"
-      ],
-      "rating": 1,
-      "director": "Tim Burton",
-      "actors": "Alec Baldwin, Geena Davis, Annie McEnroe, Maurice Page",
-      "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
-      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg"
+      "genres": "Comedy",
+      "rating": 2,
+      "poster": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg",
+      "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house."
     },
     {
       "id": 3,
